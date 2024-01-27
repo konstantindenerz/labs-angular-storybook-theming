@@ -1,0 +1,7 @@
+:host {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: var(--md-sys-color-surface-container);
+  border-radius: 1rem;
+}

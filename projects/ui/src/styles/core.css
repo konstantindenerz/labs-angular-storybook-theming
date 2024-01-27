@@ -1,0 +1,49 @@
+ /*tokens */
+ .labs-core-dark-theme {
+   --md-sys-color-surface: #151218;
+   --md-sys-color-on-surface: #E7E0E8;
+   --md-sys-color-surface-container: #211F24;
+ }
+
+ .labs-core-light-theme {
+   --md-sys-color-surface: #FEF7FF;
+   --md-sys-color-on-surface: #1a1c1e;
+   --md-sys-color-surface-container: #F2ECF4;
+ }
+
+ .labs-synthwave-light-theme {
+   --md-sys-color-surface: #c961ba;
+   --md-sys-color-on-surface: #eac25a;
+   --md-sys-color-surface-container: #b64fa7;
+ }
+
+ .labs-synthwave-dark-theme {
+   --md-sys-color-surface: #06121c;
+   --md-sys-color-on-surface: #c48abb;
+   --md-sys-color-surface-container: #08263d;
+ }
+
+
+body {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font-family: 'Road Rage', 'Helvetica', 'serif';
+  &:after {
+    content: "";
+    position: absolute;
+    background: url(https://assets.codepen.io/907471/noise.svg);
+    mix-blend-mode: overlay;
+    inset: .5rem;
+    border-radius: 1rem;
+    pointer-events: none;
+    filter: invert(1) brightness(1.2);
+  }
+}
+
+:root {
+  font-size: 150%;
+}
+
+ body > * {
+   transition: color .6s linear, background-color .6s linear;
+ }
